@@ -11,3 +11,83 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 32px;
+  border-radius: 8px;
+  background: #eee;
+}
+
+.todo-header form {
+  display: flex;
+}
+
+.todo-header form input {
+  width: 100%;
+  background: #fff;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 8px 0px 0px 8px;
+  outline: none;
+}
+
+.todo-header form button {
+  border: none;
+  background: #059405;
+  color: #fff;
+  border-radius: 0px 8px 8px 0px;
+  cursor: pointer;
+}
+
+.todo-list-items {
+  margin: 8px 0px;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin: 10px 0px;
+}
+
+.todo button {
+  border: none;
+  margin: 0px 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.todo button:nth-child(2) {
+  color: red;
+}
+
+.todo-edit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin: 10px 0px;
+}
+
+.todo-edit input {
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+
+}
+
+.todo-edit button {
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #059405;
+}
